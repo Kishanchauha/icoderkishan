@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" media="only screen" />
+    <title>Programmer village</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">C.Coder</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Topic
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/5G">Technology</a></li>
+                  <li><a class="dropdown-item" href="https://www.codecademy.com/resources/blog/what-is-web-development/">web development</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contect.html">Contect Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                Python Programming
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Python.html">Assignment 1</a></li>
+                  <li><a class="dropdown-item" href="python2.html">Assignment 2</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  
+            </ul>
+  
+           
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="Container">
+        <center>
+            <h1>Python Programming Assignment 2</h1>
+        </center>
+        <pre class="content">
+<h1>1. Python program to print the numbers from a given
+    number n till 0 using recursion</h1>
+  <b><font face="Verdana, Geneva, sans-serif" size="+1"> def number(a):
+    if a>=0:
+        print(a)
+        return number(a-1)
+        
+    else:
+        return 0
+
+ a=int(input("enter no"))
+ number(a)
+<h2>2. Python program to find the factorial 
+of a number using recursion</h2>
+  <b><font face="Verdana, Geneva, sans-serif" size="+1">
+    def fact(n):
+     if n>0:
+         return n*fact(n-1)
+     else:
+         return 1
+        
+ n=int(input())
+ f=fact(n)
+ print(f)
+
+ <h2>3. Python program to display the sum of n numbers using
+    a list without using built-in functions.</h2>
+    <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+        n=[]
+    sum=0
+    a=int(input("how many no you want to input list")) 
+    for i in range(0,a):
+        b=int(input(f"enter element {i} :"))
+        n.append(b)
+        sum=sum+n[i]
+    print("sum of number in list is :",sum)
+
+    <h2>4. Python program to implement linear search</h2>
+    <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+        def linear_Search(list1, n, key):  
+  
+        #Searching list1 sequentially  
+        for i in range(0, n):  
+            if (list1[i] == key):  
+                return i  
+        return -1  
+      
+      
+    list1 = [1 ,3, 5, 4, 7, 9]  
+    key = 7  
+      
+    n = len(list1)  
+    res = linear_Search(list1, n, key)  
+    if(res == -1):  
+        print("Element not found")  
+    else:  
+        print("Element found at index: ", res)
+        <h2>5. Python program to find the odd numbers in an array</h2>
+        <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+            list=[]
+            a=int(input("how many no you want to input in list")) 
+            for i in range(0,a):
+                b=int(input(f"enter element {i} :"))
+                list.append(b)
+            print("--------------------")
+            print(list)
+            for i in range(0,len(list)):
+                if (list[i]%2==0):
+                    print()
+                else:
+                    print("odd no",list[i])
+        <h2>6. Python program to find the largest number in a list without using built -in 
+            functions</h2>
+            <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+                max=0
+                list=[1,2,4,44,34,221,34]
+                for i in range(0,len(list)):
+                    for j in range(i+1,len(list)):
+                                    if list[i]>list[j]:
+                                       max=list[i]
+                                       list[i]=list[j]
+                                       list[j]=max
+                                    
+                        
+                print(list)                  
+                print("greater no is ",list[-1])
+         <h2>7. Python program to insert a number to any position in a list</h2>
+         <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+         print("Enter 10 Elements of List: ")
+         nums = []
+         for i in range(10):
+             nums.insert(i, input())
+         print("Enter an Element to Insert at End: ")
+         elem = input()
+         nums.append(elem)
+         print("\nThe New List is: ")
+         print(nums)
+         <h2>8. Python program to delete an element from a list by index</h2>
+         n=[]
+         a=int(input("how many no you want to input list")) 
+         for i in range(0,a):
+             b=int(input(f"enter element {i} :"))
+             n.append(b)
+         print("list is",n)
+         c=int(input("enter index number which number you want to delete "))
+         del n[c] 
+         print("new list is",n)
+         <h2>9. Python program to check whether a string is palindrome or not</h2>
+         <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+            my_string=input("Enter string:")
+            if(my_string==my_string[::-1]):
+               print("The string is a palindrome")
+            else:
+               print("The string isn't a palindrome")
+        <h2>10. Python program to implement matrix addition and multiplication</h2>
+        <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+            take a 3x3 matrix
+            A = [[12, 7, 3],[4, 5, 6],[7, 8, 9]]
+            
+            # take a 3x4 matrix
+            B = [[5, 8, 1, 2],[6, 7, 3, 0],[4, 5, 9, 1]]
+                
+            result = [[0, 0, 0, 0],[0, 0, 0, 0],[0, 0, 0, 0]]
+            
+            # iterating by row of A
+            for i in range(len(A)):
+                for j in range(len(B[0])):
+                    for k in range(len(B)):
+                        result[i][j] += A[i][k] * B[k][j]
+            
+            for r in result:
+                print(r)
+        <h2>11. Python program to check leap year</h2>
+        <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+            year =int(input("Please enter year"))
+
+            if (( year%400 == 0)or (( year%4 == 0 ) and ( year%100 != 0))):
+                print("%d is a Leap Year" %year)
+            else:
+                print("%d is Not the Leap Year" %year)
+        <h2>12. Python program to find the Nth term in a Fibonacci series using recursion</h2>
+        <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+            def recur_fibo(n):
+            if n <= 1:
+                return n
+            else:
+                return(recur_fibo(n-1) + recur_fibo(n-2))
+         
+         nterms = int(input("enter no which term series show"))
+         
+         # check if the number of terms is valid
+         if (nterms <= 0):
+            print("Plese enter a positive integer")
+         else:
+            print("Fibonacci sequence:")
+            for i in range(nterms):
+                print(recur_fibo(i))
+
+<h2>13. Python program to print all the items in a Dictionary</h>
+    <font face="Verdana, Geneva, sans-serif" size="+1"></font>
+        dictionary = {'Novel': 'Pride and Prejudice','year': '1813','author': 'Jane Austen',
+        'character': 'Elizabeth Bennet'}
+         print(dictionary.values(),dictionary.keys())
+     <h2>14. Python program to implement a calculator to do basic operations</h2>        
+     <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+        a, b = 15, 2
+        #displaying catalog for the user choice
+        print("1 - Addition
+        2 - Substraction
+        3 - Multiplication
+        4 - Division
+        5 - Floor Division
+        6 - Modulo")
+        # getting option from the user
+        option = int(input("Enter one option from the above list:- "))
+        # writing condition to perform respective operation
+        if option == 1:
+           print(f"Addition: {a + b}")
+        elif option == 2:
+           print(f"Substraction: {a - b}")
+        elif option == 3:
+           print(f"Multiplication: {a * b}")
+        elif option == 4:
+           print(f"Division: {a / b}")
+        elif option == 5:
+           print(f"Floor Division: {a // b}")
+        elif option == 6:
+           print(f"Modulo: {a % b}")
+    <h2>15. Write a Python program to convert a list of tuples into a dictionary .</h2>
+    <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+        def listtodict(A, di): 
+        di = dict(A) 
+        return di 
+     
+     # Driver Code  
+     A = [("Adwaita", 5), ("Aadrika", 5), ("Babai", 37), ("Mona", 7), ("Sanj", 25), ("Sakya", 30)] 
+     di = {} 
+     print ("The Dictionary Is ::>",listtodict(A, di)) 
+     <h2>16. Replace last value of tuples in a list</h2>
+     <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>
+        l = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+        print([t[:-1] + (100,) for t in l])
+    <h2>17. Write a Python program to remove an empty tuple(s) from a list of tuples.</h2>
+    <b><font face="Verdana, Geneva, sans-serif" size="+1"></font>        
+        def Remove(tuples):
+            for i in tuples:
+                if(len(i) == 0):
+                    tuples.remove(i)
+            return tuples
+        
+        
+        # Driver Code
+        tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
+                ('krishna', 'akbar', '45'), ('', ''), ()]
+        print(Remove(tuples))
+        <h2>18. Write a Python program to divide two numbers using exception handling.</h2>
+        try:
+           a=int(input("enter  1 no "))
+           b=int(input("enter 2 no"))
+           c=a/b
+        except:
+               print("cannot divide by zero")
+        finally:
+               print("divide is",c)  
+
+        </pre>
+        </div>
+</body>
+
+</html>

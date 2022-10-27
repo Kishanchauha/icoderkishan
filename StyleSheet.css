@@ -1,0 +1,27 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: 'Trebuchet MS';
+}
+
+.Container {
+    width: 90%;
+    min-width: 500px;
+    margin: auto;
+}
+
+
+
+
+.content {
+    float: none;
+    border-style: dashed;
+    border-color:white;
+   width: 100%; /* 95px*/
+
+    height: 100%; /*1400px*/
+    color: black; 
+}
+
+
